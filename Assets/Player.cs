@@ -42,6 +42,27 @@ public class Player : MonoBehaviour {
 
     }
 
+    public void ButtonRightPunch()
+    {
+        if (facingRight)
+        {
+            anim.SetBool("punch", true);
+
+
+        }
+        else if (!facingRight)
+        {
+            Flip();
+            facingRight = true;
+            //Insert Punch Script Here
+            anim.SetBool("punch", true);
+
+        }
+
+        StartCoroutine(waitAnimation());
+
+    }
+
     public void ButtonLeft()
     {
         
@@ -64,6 +85,27 @@ public class Player : MonoBehaviour {
 
     }
 
+    public void ButtonLeftPunch()
+    {
+        if (!facingRight)
+        {
+            anim.SetBool("punch", true);
+
+
+        }
+        else if (facingRight)
+        {
+            Flip();
+            facingRight = false;
+            //Insert Punch Script Here
+            anim.SetBool("punch", true);
+
+        }
+
+        StartCoroutine(waitAnimation());
+
+    }
+
     void Flip()
     {
         transform.localScale = new Vector3(transform.localScale.x * -1f, transform.localScale.y, transform.localScale.z);
@@ -75,6 +117,7 @@ public class Player : MonoBehaviour {
         melee.SetActive(true);
         yield return new WaitForSeconds(0.3f);
         anim.SetBool("kick", false);
+        anim.SetBool("punch", false);
         melee.SetActive(false);
     }
 }
