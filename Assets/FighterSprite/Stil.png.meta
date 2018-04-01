@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: 9c681c9bc19860a44bb68709238dfeb0
-timeCreated: 1522518628
+guid: 6de294f441cac9849abddb74aa565186
+timeCreated: 1522590677
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: punch_0
-    21300002: punch_1
-    21300004: punch_2
-    21300006: punch_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -44,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -89,63 +85,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: punch_0
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 45
-        width: 212
-        height: 728
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: punch_1
-      rect:
-        serializedVersion: 2
-        x: 579
-        y: 45
-        width: 213
-        height: 728
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: punch_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 45
-        width: 337
-        height: 728
-      alignment: 9
-      pivot: {x: 0.31082252, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: punch_3
-      rect:
-        serializedVersion: 2
-        x: 1560
-        y: 42
-        width: 439
-        height: 728
-      alignment: 9
-      pivot: {x: 0.23240685, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 

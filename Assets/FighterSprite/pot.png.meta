@@ -1,15 +1,14 @@
 fileFormatVersion: 2
-guid: 8794436b2f1783c4b90effd5ba211aeb
-timeCreated: 1518974678
+guid: 6c0588cf682c0884998efa69485514fb
+timeCreated: 1522590739
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: kick_0
-    21300002: kick_1
-    21300004: kick_2
-    21300006: kick_3
-    21300008: kick_4
-    21300010: kick_5
+    21300000: pot_0
+    21300002: pot_1
+    21300004: pot_2
+    21300006: pot_3
+    21300008: pot_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -80,61 +79,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   - buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Tizen
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Samsung TV
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -147,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kick_0
+      name: pot_0
       rect:
         serializedVersion: 2
-        x: 106
-        y: 45
-        width: 215
-        height: 728
+        x: 25
+        y: 42
+        width: 85
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,13 +106,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: kick_1
+      name: pot_1
       rect:
         serializedVersion: 2
-        x: 486
-        y: 45
-        width: 281
-        height: 713
+        x: 120
+        y: 42
+        width: 85
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,13 +120,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: kick_2
+      name: pot_2
       rect:
         serializedVersion: 2
-        x: 882
-        y: 45
-        width: 373
-        height: 713
+        x: 213
+        y: 42
+        width: 85
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,13 +134,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: kick_3
+      name: pot_3
       rect:
         serializedVersion: 2
-        x: 1335
-        y: 40
-        width: 368
-        height: 718
+        x: 307
+        y: 42
+        width: 85
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,27 +148,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: kick_4
+      name: pot_4
       rect:
         serializedVersion: 2
-        x: 1776
-        y: 45
-        width: 410
-        height: 724
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: kick_5
-      rect:
-        serializedVersion: 2
-        x: 2239
-        y: 45
-        width: 282
-        height: 713
+        x: 401
+        y: 42
+        width: 85
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
