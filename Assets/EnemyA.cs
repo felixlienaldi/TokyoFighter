@@ -28,7 +28,11 @@ public class EnemyA : Enemy {
         enemy.Attack = Attack;
         enemy.Health = Health;
         enemy.Speed = Speed;
-       
+        aSprite = enemy.sprite;
+        aBasecooldown = enemy.attackCooldown;
+
+
+
     }
 
    

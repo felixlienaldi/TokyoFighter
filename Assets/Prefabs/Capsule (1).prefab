@@ -134,4 +134,7 @@ MonoBehaviour:
   Attack: 0
   Health: 0
   Speed: 0
+  sprite: {fileID: 0}
+  attackCooldown: 0
   target: {fileID: 0}
+  status: {fileID: 11400000, guid: e96a223a56c4a61439e681b78821e486, type: 2}

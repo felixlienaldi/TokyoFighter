@@ -137,7 +137,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 73018117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -224.95999, y: -504.3, z: 0}
+  m_LocalPosition: {x: -224.95996, y: -504.30005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1046645549}
@@ -614,7 +614,7 @@ RectTransform:
   m_GameObject: {fileID: 1046645545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -9}
-  m_LocalScale: {x: 0.0060000005, y: 0.0060000005, z: 0.0060000005}
+  m_LocalScale: {x: 0.006, y: 0.006, z: 0.006}
   m_Children:
   - {fileID: 73018118}
   - {fileID: 1057772941}
@@ -874,7 +874,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f075ebad4b43794caa47019e6cfbe24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    _attack: 0
+    _health: 0
+    _stamina: 0
   melee: {fileID: 1519405556}
+  cooldown: 1
+  canAttack: 1
 --- !u!212 &1456899355
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1044,7 +1050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1604374363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1087,7 +1093,7 @@ SpriteRenderer:
   m_Size: {x: 9, y: 16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1604374364
 Transform:
@@ -1509,8 +1515,7 @@ MonoBehaviour:
   SpawnLocation:
   - {fileID: 1211870403}
   - {fileID: 1982649524}
-  EnemyPerson: {fileID: 1473393585026788, guid: e951665dc2b322848b917a7b38127bfa,
-    type: 2}
+  target: {fileID: 1473393585026788, guid: e951665dc2b322848b917a7b38127bfa, type: 2}
   direction: {x: 0, y: 0, z: 0}
 --- !u!4 &1990098303
 Transform:

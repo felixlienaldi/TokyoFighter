@@ -6,10 +6,11 @@ public class Player : MonoBehaviour {
 
     public Character player = new Character();
     public GameObject melee;
-    Animator anim;
+    public float cooldown;
+    public bool canAttack;
     bool facingRight;
-   
-    
+    Animator anim;
+
     void Start() {
         player.health = 100f;
         player.stamina = 100f;
@@ -23,10 +24,12 @@ public class Player : MonoBehaviour {
 
     public void ButtonRight()
     {
-        if (facingRight)
+        if (canAttack)
+        {
+
+            if (facingRight)
             {
                 anim.SetBool("kick", true);
-               
 
             }
             else if (!facingRight)
@@ -35,74 +38,88 @@ public class Player : MonoBehaviour {
                 facingRight = true;
                 //Insert Punch Script Here
                 anim.SetBool("kick", true);
-                
+
             }
 
-        StartCoroutine(waitAnimation());
+            StartCoroutine(waitAnimation());
+        }
+
+
 
     }
 
     public void ButtonRightPunch()
     {
-        if (facingRight)
+        if (canAttack)
         {
-            anim.SetBool("punch", true);
+            if (facingRight)
+            {
+                anim.SetBool("punch", true);
 
 
+            }
+            else if (!facingRight)
+            {
+                Flip();
+                facingRight = true;
+                //Insert Punch Script Here
+                anim.SetBool("punch", true);
+
+            }
+
+            StartCoroutine(waitAnimation());
         }
-        else if (!facingRight)
-        {
-            Flip();
-            facingRight = true;
-            //Insert Punch Script Here
-            anim.SetBool("punch", true);
-
-        }
-
-        StartCoroutine(waitAnimation());
+        
+    
 
     }
 
     public void ButtonLeft()
     {
-        
-            if (!facingRight)
+        if (canAttack)
+        {
+            if (!facingRight && canAttack)
             {
                 //Insert Punch Script Here
                 anim.SetBool("kick", true);
-               
+
             }
-            else if (facingRight)
+            else if (facingRight && canAttack)
             {
                 Flip();
                 facingRight = false;
                 //Insert Punch Script Here
                 anim.SetBool("kick", true);
-             
+
             }
 
-        StartCoroutine(waitAnimation());
+            StartCoroutine(waitAnimation());
+        }
+       
 
     }
 
     public void ButtonLeftPunch()
     {
-        if (!facingRight)
+        if (canAttack)
         {
-            anim.SetBool("punch", true);
 
+            if (!facingRight && canAttack)
+            {
+                anim.SetBool("punch", true);
 
+            }
+            else if (facingRight && canAttack)
+            {
+                Flip();
+                facingRight = false;
+                //Insert Punch Script Here
+                anim.SetBool("punch", true);
+
+            }
+
+            StartCoroutine(waitAnimation());
         }
-        else if (facingRight)
-        {
-            Flip();
-            facingRight = false;
-            //Insert Punch Script Here
-            anim.SetBool("punch", true);
-
-        }
-
-        StartCoroutine(waitAnimation());
 
     }
 
@@ -113,11 +130,14 @@ public class Player : MonoBehaviour {
 
     IEnumerator waitAnimation()
     {
+        canAttack = false;
         yield return new WaitForSeconds(0.4f);
         melee.SetActive(true);
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.1f);
         anim.SetBool("kick", false);
         anim.SetBool("punch", false);
         melee.SetActive(false);
+        yield return new WaitForSeconds(cooldown);
+        canAttack = true;
     }
 }

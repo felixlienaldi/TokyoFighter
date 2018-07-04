@@ -10,16 +10,14 @@ public class EnemySpawner : MonoBehaviour {
     public bool ready = true;
     public Transform[] SpawnLocation;
 
-    public GameObject EnemyPerson;
+    public GameObject target;
    
-    public Vector3 direction; 
-
-   
-
+    public Vector3 direction;
+    
     // Use this for initialization
     void Start () {
        
-        StartCoroutine(Spawn(EnemyPerson));
+        StartCoroutine(Spawn(target));
     }
 	
 	// Update is called once per frame

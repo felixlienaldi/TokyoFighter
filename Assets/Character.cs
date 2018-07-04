@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Character {
 
-    private float _attack, _health, _stamina;
+    [SerializeField] private float _attack, _health, _stamina;
+
 
     public float attack {
         get {

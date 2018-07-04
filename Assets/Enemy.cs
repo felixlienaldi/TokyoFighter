@@ -33,7 +33,7 @@ public abstract class Enemy : ScriptableObject
 {
     public Sprite aSprite;
     public float aBasecooldown = 1f;
-    public string aName = "New Enemy";
+    public string aName;
 
     public abstract void Spawn(GameObject obj);
   
